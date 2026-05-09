@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    /* caso voce queira colocar uma imagem no tamanho da pag. para garantir que vai ficar a img total no fundo: */
+    /* background-image: url(img/Margin\_e\_Padding.png) */
+
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 60rem;
+        /* 1 rem é equivalente 16px, então nesse caso é o mesmo que 60 * 16  = 900px */
+        position: relative;
+        background: url(img/Fundo-hero\ 02.png) center/cover no-repeat;
+        color: #fff;
+        z-index: 1;
+
+        nav {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+
+            width: 100vw;
+            height: 4rem;
+            padding: 16px 2rem;
+            background: rgba(0, 0, 0, 0.4);
+
+
+            .container {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 80%;
+                height: 4rem;
+
+                .logo img {
+
+                    width: 4rem;
+
+                }
+
+
+                .menu {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    gap: 4rem;
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: large;
+                    }
+
+                }
+
+
+                .btn-entrar {
+                    text-decoration: none;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    padding: 8px 1rem;
+                    border-radius: 4px;
+                    font-size: large;
+
+                }
+
+                .btn-entrar:hover {
+
+                    background: rgb(225, 82, 82, 0.2);
+                    /* Para deixar o fundo branco e mudar a cor da letra: */
+                    /* background: rgb(229, 226, 226);
+                    color: black; */
+
+                }
+
+            }
+        }
+
+        .hero {
+            position: relative;
+            /* Garante que o conteúdo do hero fique acima da imagem de fundo */
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+            /* Espaçamento entre título, texto e botão */
+            width: 80%;
+            padding: 0 2rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .sonho {
+                max-width: 43rem;
+
+                p {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                    opacity: 0.9;
+                }
+            }
+
+            .btn-principal {
+                text-decoration: none;
+                background: rgba(0, 38, 102, 0.8);
+                padding: 0.75rem 1.5rem;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                font-weight: 500;
+                transition: background 0.3s;
+                cursor: pointer;
+            }
+
+            .btn-principal:hover {
+                background-color: rgba(48, 82, 141, 0.8);
+                /* Efeito hover para chamar atenção */
+
+            }
+        }
+    }
+}
+
+ #parcerias {
+
+
+
+        #parceiros {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+            background-color: #d1ad888c;
+            width: 100vw;
+            padding-top: 1px;
+            padding-inline: 0;
+            /* remove respiro lateral */
+
+
+        }
+
+        .parNav {
+            /* display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            width: 100%;
+            margin: 0 auto;
+            padding: 16px; */
+
+            position: relative;
+            /* referência para absolutos */
+            width: 100%;
+            min-height: 280px;
+            /* altura da faixa (ajuste) */
+            display: block;
+            /* não precisa de flex aqui */
+            overflow: hidden;
+            /* garante que nada vaze */
+            padding: 16px;
+            /* seu padding */
+            box-sizing: border-box;
+
+
+
+        }
+
+        .parc {
+
+            /* display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-family: Montserrat;
+            position: relative; */
+            /* Define o contexto para o 'absolute' */
+            /* padding-left: 20px; */
+            /* Espaço para a barra não cobrir o texto */
+            /* border-left: 5px solid #C9A86A; */
+            /* Largura e cor da barra */
+            /* padding-left: 15px; */
+            /* Espaço entre a barra e o texto */
+            /* margin-left: 10px; */
+            /* Opcional: margem externa */
+
+            /* h2 {
+                font-family: Playfair;
+                font-size: 100px;
+                /* color: #BB966B; */
+            /* color: #C9A86A;
+                size: 70;
+                text-align: left;
+                letter-spacing: 3px;
+            } */
+
+            /* h3 {
+                font-family: Montserrat;
+                font-size: 40px;
+                text-align: left;
+                size: 5;
+                color: #22444C;
+
+            } */
+
+
+            position: absolute;
+            top: 0;
+            /* “topo da seção” (desta seção) */
+            left: 0;
+            right: 0;
+            z-index: 2;
+            /* acima da imagem */
+            color: #22444C;
+            padding: 24px 32px;
+            /* ajuste do respiro */
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-family: Montserrat;
+            border-left: 5px solid #C9A86A;
+            padding-left: 15px;
+            /* distância do texto para a barra */
+            margin-left: 10px;
+            /* se quiser “encaixar” */
+
+
+            h2 {
+                font-family: Playfair;
+                font-size: clamp(48px, 8vw, 100px);
+                color: #C9A86A;
+                letter-spacing: 3px;
+                margin: 0;
+            }
+
+            h3 {
+                font-family: Montserrat;
+                font-size: clamp(18px, 2.2vw, 40px);
+                color: #22444C;
+                margin: 0;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+
+        }
+
+        parNav::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0) 50%);
+            z-index: 1;
+            /* entre a imagem (0) e o texto (2) */
+        }
+
+        /* Responsividade opcional */
+        @media (max-width: 768px) {
+            .parNav {
+                min-height: 220px;
+            }
+
+            .secao-parceiros .parc {
+                padding: 16px 20px;
+            }
+        }
+
+
+    }
