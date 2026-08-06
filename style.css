@@ -10,6 +10,9 @@ html,
 body {
     overflow-x: hidden;
     width: 100%;
+    min-height: 100vh;
+    overflow: visible;
+}
 
     header {
         display: flex;
@@ -37,19 +40,19 @@ body {
 
         width: 100vw;
         height: 4rem;
-        padding: 16px 2rem;
+        padding: 5px;
         background: #e5d9ca6d;
 
 
         .ordem {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
             width: 80%;
             height: 4rem;
             /* position: fixed; */
             background-color: #e5d9ca15;
-            padding: 15px;
+            padding: 5px;
         }
 
         .logo img {
@@ -84,7 +87,7 @@ body {
             color: #ad7d43;
             border: 1px solid #ad7d43;
             border-radius: 30px solid #ad7d43;
-            padding: 8px 1rem;
+            padding: 8px;
             border-radius: 4px;
             font-size: large;
             font-size: 20px;
@@ -106,28 +109,122 @@ body {
         /* background: #E5D9CA;
         background: linear-gradient(180deg, rgba(229, 217, 202, 0.92) 0%, rgba(228, 225, 224, 1) 50%); */
         display: flex;
-        /* margin: 0 8px; */
-
-    }
-
-    #capa {
-        display: flex;
-        justify-content: space-evenly;
-        /* gap: 10px; */
+        margin: 10px;
         width: 100%;
-        height: 600px;
-        margin: 50px;
-    }
+        gap: 20px;
 
-    .texto {
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-        flex-direction: column;
-        gap: 40px;
-        /* text-align: left; */
-        width: 70%;
-       
+    
+
+        #capa{
+            display: flex;
+            justify-content: space-evenly;
+            /* gap: 10px; */
+            width: 100%;
+            height: 600px;
+        
+
+            .texto {
+                display: flex;
+                justify-content: center;
+                /* align-items: center; */
+                flex-direction: column;
+                gap: 40px;
+                /* text-align: left; */
+                width: 60%;
+        
+
+                h2 {
+                    font-family: Montserrat;
+                    font-size: 15px;
+                    /* color: #BB966B; */
+                    color: #C9A86A;
+                    /* size: 60; */
+                    padding: 0 35px;
+                }
+
+                h1 {
+                    font-family: Playfair;
+                    font-size: 50px;
+                    text-align: left;
+                    /* size: 5; */
+                    padding: 0 35px;
+                    color: #22444C;
+                }
+            
+                p {
+                    font-family: Montserrat;
+                    color: #776654;
+                    text-align: left;
+                    padding: 0 35px;
+                }
+
+                .contato {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+                .botao {
+                    padding: 15px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+                .botao button {
+                    /* Largura Total */
+                    width: 180px;
+                    /* Definindo a largura */
+                    height: 45px;
+                    /* Definindo a cor do fundo do botao */
+                    background-color: transparent;
+                    /* Defindo a cor do conteudo/ texto do que vai no botao */
+                    color: #776654;
+                    /* Tamanho do texto do botao */
+                    font-size: 10px;
+                    /* definir a borda no botao */
+                    border: 2px solid;
+                    /* para arredondar a borda dele */
+                    border-radius: 35px;
+                    /* para mudar o cursor para quando voce passar o mouse por cima do botao para parecer clicavel */
+                    cursor: pointer;
+                    transition: 2s;
+                    box-shadow: 0 0 30px 10px #E6D9CA;
+                }
+            }
+
+            .imagem {
+                padding: 30px;
+                width: 40%;
+                height: 700px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                /* margin: 10px; */
+
+
+                img {
+                    max-width: 97%;
+                    height: auto;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                    border-radius: 15px;
+                    padding: auto;
+                }
+
+            }
+        }
+    }
 
         h2 {
             font-family: Montserrat;
@@ -135,131 +232,41 @@ body {
             /* color: #BB966B; */
             color: #C9A86A;
             size: 70;
-            padding: 0 35px;
+            text-align: left;
+            letter-spacing: 3px;
+
         }
 
-    }
+        h3 {
+            font-family: Playfair;
+            font-size: 40px;
+            text-align: left;
+            size: 5;
+            color: #22444C;
 
-    h1 {
-        font-family: Playfair;
-        font-size: 55px;
-        text-align: left;
-        size: 5;
-        padding: 0 35px;
-        color: #22444C;
-    }
-
-
-    .texto p {
-        font-family: Montserrat;
-        color: #776654;
-        text-align: left;
-        padding: 0 35px;
-    }
-
-    .contato {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-
-        a {
-            text-decoration: none;
-        }
-    }
-
-    .botao {
-        padding: 15px;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        a {
-            text-decoration: none;
-        }
-    }
-
-    .botao button {
-        /* Largura Total */
-        width: 200px;
-        /* Definindo a largura */
-        height: 45px;
-        /* Definindo a cor do fundo do botao */
-        background-color: transparent;
-        /* Defindo a cor do conteudo/ texto do que vai no botao */
-        color: #776654;
-        /* Tamanho do texto do botao */
-        font-size: 12px;
-        /* definir a borda no botao */
-        border: 2px solid;
-        /* para arredondar a borda dele */
-        border-radius: 35px;
-        /* para mudar o cursor para quando voce passar o mouse por cima do botao para parecer clicavel */
-        cursor: pointer;
-        transition: 2s;
-        box-shadow: 0 0 30px 10px #E6D9CA;
-    }
-
-    .imagem {
-        padding: 15px;
-        width: 50%;
-        height: 700px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-        img {
-            width: 450px;
-            height: 600px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            border-radius: 15px;
         }
 
-    }
+        h4 {
+            font-family: Playfair;
+            font-size: 40px;
+        }
 
-    h2 {
-        font-family: Montserrat;
-        font-size: medium;
-        /* color: #BB966B; */
-        color: #C9A86A;
-        size: 70;
-        text-align: left;
-        letter-spacing: 3px;
+        h5 {
+            font-family: Montserrat;
+            font-size: medium;
+            color: #fff;
+            size: 80;
+            text-align: left;
+        }
 
-    }
-
-    h3 {
-        font-family: Playfair;
-        font-size: 40px;
-        text-align: left;
-        size: 5;
-        color: #22444C;
-
-    }
-
-    h4 {
-        font-family: Playfair;
-        font-size: 40px;
-    }
-
-    h5 {
-        font-family: Montserrat;
-        font-size: medium;
-        color: #fff;
-        size: 80;
-        text-align: left;
-    }
-
-    h6 {
-        font-family: Montserrat, sans-serif;
-        font-size: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        text-align: left;
-        color: #22444C;
-    }
+        h6 {
+            font-family: Montserrat, sans-serif;
+            font-size: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: left;
+            color: #22444C;
+        }
 
     #sobre {
 
@@ -267,54 +274,56 @@ body {
             display: flex;
             justify-content: space-evenly;
             direction: row;
+            width: 100vw;
             padding: 100px 0;
             background-color: #d1ad888c;
-
-        }
-
-        .video {
-            width: 40%;
-            height: 700px;
-            overflow: hidden;
-            /*  corta o excesso da imagem */
-            display: flex;
-            justify-content: center;
-            align-items: end;
-
-            box-shadow:
-                rgba(0, 0, 0, 0.25) 0px 54px 55px,
-                rgba(0, 0, 0, 0.12) 0px -12px 30px,
-                rgba(0, 0, 0, 0.12) 0px 4px 6px,
-                rgba(0, 0, 0, 0.17) 0px 12px 13px,
-                rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-            overflow: hidden;
-            /* importante */
-            border-radius: 16px;
-            /* opcional */
-        }
+            
 
 
-        .gif {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+            .video {
+                width: 40%;
+                height: 700px;
+                overflow: hidden;
+                /*  corta o excesso da imagem */
+                display: flex;
+                justify-content: center;
+                align-items: end;
 
-        .dados {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            text-align: left;
-        }
+                box-shadow:
+                    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-        .resumo {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            font-family: Montserrat;
+                overflow: hidden;
+                /* importante */
+                border-radius: 16px;
+                /* opcional */
+            }
+
+
+            .gif {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .dados {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                text-align: left;
+            }
+
+            .resumo {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                font-family: Montserrat;
+            }
         }
 
     }
@@ -327,6 +336,7 @@ body {
         /* centraliza */
         background-repeat: no-repeat;
         /* não repete */
+        width: 100vw;
         height: 100%;
         /* altura da seção */
         /* background: #E5D9CA;
@@ -537,7 +547,9 @@ body {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            align-items: center;
             margin-bottom: 50px;
+            width: 100vw;
 
                 .parc{
 
@@ -550,10 +562,10 @@ body {
                     
                     h2 {
                     font-family: Montserrat;
-                    font-size: medium;
+                    font-size: 50px;
                     /* color: #BB966B; */
                     color: #C9A86A;
-                    size: 100;
+                    /* size: 100; */
                     text-align: left;
                     letter-spacing: 3px;
 
@@ -561,9 +573,9 @@ body {
 
                     h3 {
                         font-family: Playfair;
-                        font-size: 60px;
-                        text-align: left;
-                        size: 5;
+                        font-size:30px;
+                        text-align: center;
+                        /* size: 5; */
                         color: #22444C;
 
                     }
@@ -620,6 +632,7 @@ body {
             padding: 100px 20px;
             background-color: #E5D9CA;
             margin-bottom: 0;
+            
             }
 
             .parceiros-container {
@@ -895,15 +908,17 @@ body {
     }
 
 
+
     #clientes {
         background-image: url("./img/back_ground_consultoria_transparencia_dois.png");
         background-size: cover;
+        width: 100vw;
+        min-height: 800px; /* ou remove height fixa */
         /* cobre toda a div */
         background-position: center;
         /* centraliza */
         background-repeat: no-repeat;
         /* não repete */
-        height: 800px;
         /* altura da seção */
         display: flex;
         justify-content: center;
@@ -911,6 +926,7 @@ body {
         flex-direction: column;
         gap: 10px;
         padding: 30px 10px 80px 10px;
+        
 
 
 
@@ -922,8 +938,12 @@ body {
             align-items: center;
             flex-direction: column;
             gap: 30px;
-            height: 300px;
+            height: auto;
             padding: 30px;
+            width: 100%;
+            max-width: 100%;
+            padding: 30px;
+            overflow-x: hidden; /* 👈 importante */
         }
 
                 /* ===== CARD DEPOIMENTO — MODELO A ===== */
@@ -942,6 +962,7 @@ body {
         opacity: 0.4;
         display: flex;
         flex-direction: column;
+        
 
             
 
@@ -1170,7 +1191,7 @@ body {
     .ebooks-section {
         background-color: #d1ad888c;
         margin-top: 0;
-        width: 100%;
+        width: 100vw;
 
         
         }
@@ -1182,6 +1203,7 @@ body {
         flex-direction: column;
         padding: 50px 0;
         background-color: #d1ad888c;
+        width: 100vw;
 
         }
 
@@ -1529,8 +1551,11 @@ body {
     #rodape {
         background: #E5D9CA;
         background: linear-gradient(180deg, rgba(229, 217, 202, 0.92) 0%, rgba(228, 225, 224, 1) 50%);
-        width: 100vw;
-        height: 100vh;
+        box-sizing: border-box;
+        height: auto; /* ou remove totalmente */
+        padding-bottom: 40px; /* garante respiro embaixo */
+        overflow-x: hidden;
+        width: 100;
         /* margin: 0 8px; */
     }
 
@@ -1585,8 +1610,6 @@ body {
         gap: 30px;
 
     }
-
-
 
         .pessoal {
 
@@ -1719,7 +1742,7 @@ body {
 
 
         }
-    }    
+       
 
         @media (max-width:600px) {
 
